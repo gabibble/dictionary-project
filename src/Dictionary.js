@@ -9,7 +9,7 @@ export default function Dictionary() {
 
   function handleResponse(response) {
     setResults(response.data[0]);
-    //console.log(response.data);
+    console.log(response.data);
     console.log(response.data[0].word);
     console.log(response.data[0].meanings[0].partOfSpeech);
     console.log(response.data[0].meanings[0].definitions[0].definition);
