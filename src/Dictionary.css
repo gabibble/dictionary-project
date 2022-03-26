@@ -1,2 +1,19 @@
-.Dictionary {
+.Dictionary section {
+  background-color: rgba(255, 255, 255, 0.342);
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.Dictionary input {
+  width: 100%;
+  padding: 6px 4px;
+  border: 1px solid rgba(123, 240, 201, 0.747);
+  border-radius: 4px;
+  color: #333;
+}
+
+.prompt {
+  font-family: "Poppins", sans-serif;
+  color: white;
 }

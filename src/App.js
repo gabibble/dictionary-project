@@ -9,11 +9,11 @@ function App() {
         <header className="App-header">
           <h1>
             <img src={logo} className="App-logo img-fluid" alt="logo" />
-            Dictionary{" "}
+            Dictionary
           </h1>
         </header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="sunset" />
         </main>
         <footer className="App-footer">Coded by Julia</footer>
       </div>

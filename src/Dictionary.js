@@ -3,39 +3,50 @@ import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
 
-export default function Dictionary() {
-  let [keyword, setKeyword] = useState("");
+export default function Dictionary(props) {
+  let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
+  let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
     setResults(response.data[0]);
-    console.log(response.data);
-    console.log(response.data[0].word);
-    console.log(response.data[0].meanings[0].partOfSpeech);
-    console.log(response.data[0].meanings[0].definitions[0].definition);
-    console.log(response.data[0].meanings[0].definitions[0].example);
+  }
+
+  function search() {
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   // documentation: https://dictionaryapi.dev/
 
-  function search(event) {
+  function handleSubmit(event) {
     event.preventDefault();
-    //let apiUrl = `https://dictionaryapi.com/api/v3/references/learners/json/${keyword}?key=4089a2b7-0b47-46c4-b9d6-6156ac70ea9d`;
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+    search();
   }
 
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
   }
 
-  return (
-    <div className="Dictionary">
-      <form onSubmit={search}>
-        <input type="search" onChange={handleKeywordChange} />
-        <input type="submit" />
-      </form>
-      <Results results={results} />
-    </div>
-  );
+  function load() {
+    setLoaded(true);
+    search();
+  }
+
+  if (loaded) {
+    return (
+      <div className="Dictionary">
+        <section>
+          <span className="prompt">What is the meaning of... </span>
+          <form onSubmit={handleSubmit}>
+            <input type="search" onChange={handleKeywordChange} />
+          </form>
+        </section>
+        <Results results={results} />
+      </div>
+    );
+  } else {
+    load();
+    return "Loadiing";
+  }
 }

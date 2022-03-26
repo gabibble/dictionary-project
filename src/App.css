@@ -4,10 +4,10 @@ body {
 }
 
 a {
-  color: aquamarine;
+  color: rgba(56, 57, 68, 0.534);
 }
 .App {
-  color: rgb(36, 34, 43);
+  color: rgb(56, 57, 68);
 }
 
 .App h1 {
