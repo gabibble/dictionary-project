@@ -1,13 +1,29 @@
+body {
+  background: rgb(123, 240, 201);
+  font-family: "Bitter", serif;
+}
+
+a {
+  color: aquamarine;
+}
 .App {
+  color: rgb(36, 34, 43);
+}
+
+.App h1 {
+  font-size: 72px;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .App-header {
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .App-logo {
-  max-width: 150px;
-  display: block;
+  max-height: 55px;
+  display: inline;
+  margin: 0 10px 10px 0;
 }
 
 .App-footer {
