@@ -1,6 +1,8 @@
 body {
   font-family: "Bitter", serif;
   background: #5cc1b3;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 a {

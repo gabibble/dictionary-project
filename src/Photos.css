@@ -1,0 +1,16 @@
+.Photos img {
+  border-radius: 4px;
+  margin: 25px 0 0 0;
+}
+
+.Photos small {
+  font-size: 8px;
+  font-family: "Poppins", sans-serif;
+  opacity: 80%;
+  margin: 0;
+}
+
+.Photos .source {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
