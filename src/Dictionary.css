@@ -1,19 +1,21 @@
 .Dictionary section {
-  background-color: rgba(255, 255, 255, 0.342);
+  background-color: rgba(255, 255, 255, 0.301);
   padding: 20px;
   margin: 15px 0;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .Dictionary input {
   width: 100%;
   padding: 6px 4px;
-  border: 1px solid rgba(123, 240, 201, 0.747);
+  border: 1px solid rgba(87, 207, 191, 0.589);
+
   border-radius: 4px;
   color: #333;
 }
 
 .prompt {
   font-family: "Poppins", sans-serif;
+
   color: white;
 }

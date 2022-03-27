@@ -1,13 +1,19 @@
 body {
-  background: rgb(123, 240, 201);
   font-family: "Bitter", serif;
+  background: #5cc1b3;
 }
 
 a {
-  color: rgba(56, 57, 68, 0.534);
+  text-decoration: none;
+  color: rgb(65, 67, 87);
+  font-weight: 600;
+}
+
+a:hover {
+  color: black;
 }
 .App {
-  color: rgb(56, 57, 68);
+  color: rgb(65, 67, 87);
 }
 
 .App h1 {

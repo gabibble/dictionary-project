@@ -15,7 +15,24 @@ function App() {
         <main>
           <Dictionary defaultKeyword="sunset" />
         </main>
-        <footer className="App-footer">Coded by Julia</footer>
+        <footer className="App-footer">
+          This project was created by{" "}
+          <a
+            href="https://www.juliagiebultowicz.com/index.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Julia Giebultowicz
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/gabibble/dictionary-project"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced
+          </a>
+        </footer>
       </div>
     </div>
   );

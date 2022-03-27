@@ -1,4 +1,6 @@
 import React from "react";
+import "./Phonetic.css";
+import audio from "./audio.png";
 
 export default function Phonetic(props) {
   if (props.phonetic.audio) {
@@ -7,7 +9,7 @@ export default function Phonetic(props) {
         {props.phonetic.text}
         {"  "}
         <a href={props.phonetic.audio} target="_blank" rel="noreferrer">
-          listen
+          <img src={audio} className="audio" alt="listen" />
         </a>
       </div>
     );

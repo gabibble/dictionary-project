@@ -1,0 +1,11 @@
+.Synonyms {
+  padding: 0;
+  margin: 5px 0 0;
+}
+.Synonyms li {
+  display: inline-block;
+  padding-right: 15px;
+  opacity: 50%;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}

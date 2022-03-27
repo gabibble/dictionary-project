@@ -1,0 +1,19 @@
+.Meaning h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  opacity: 60%;
+  line-height: 1.5;
+}
+
+.Meaning .definition {
+  font-weight: 500;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.Meaning .example {
+  font-size: 14px;
+  opacity: 70%;
+  margin-top: 5px;
+}

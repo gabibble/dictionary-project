@@ -1,0 +1,9 @@
+.Phonetic {
+  font-size: 18px;
+  opacity: 60%;
+}
+
+.audio {
+  max-height: 20px;
+  margin: 0 0 3px 5px;
+}
